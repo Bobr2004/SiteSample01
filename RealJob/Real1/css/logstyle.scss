@@ -1,0 +1,178 @@
+@import "BaseStyleRemover.css";
+
+//main colors
+$b_black: #0d1118;
+$t_white: #c8d1d9;
+$d_black: #161b22;
+
+$t_blue: #57a3fc;
+$button_red: #d55b5a;
+$button_hover_red: #d36261;
+
+
+//animations
+$a_trans: 0.7s;
+
+//borders
+$b_radius: 5px;
+$outline_black: #21262d;
+$input_out_black: #30363e;
+
+a:active, a:hover, a:visited,
+a {
+  text-decoration: none;
+  color: $t_white;
+}
+
+body {
+  background: $b_black;
+  color: $t_white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  //font-weight: 700;
+  font-size: 18px;
+}
+
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 32px;
+  text-shadow: 0 0 1px $t_white;
+
+  a {
+    transition-duration: $a_trans;
+
+    &:hover {
+      text-shadow: 0 0 15px $t_white;
+      //color: $b_black;
+    }
+
+    font-size: 1.5em;
+  }
+}
+
+.formTitle {
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.reg_log {
+  display: block;
+
+  .reg, .log, .changeForm, .forgot {
+    max-width: 550px;
+    background: $d_black;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: $b_radius * 2;
+    border: 1px solid $outline_black;
+    box-shadow: 0 0 5px black;
+
+
+    form {
+      div {
+        width: 95%;
+        margin: 0 auto 20px;
+      }
+
+      .forgot_pass {
+        color: $t_blue;
+        float: right;
+        transition-duration: $a_trans;
+
+        &:hover {
+          text-shadow: 0 0 2px $t_blue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    input {
+      background: $b_black;
+      border: 1px solid $input_out_black;
+      padding: 8px 12px;
+      color: $t_white;
+      display: block;
+      width: 100%;
+      margin: 10px 0 0;
+      font-size: 18px;
+      border-radius: $b_radius * 2;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    .FormButton {
+      background: $button_red;
+      transition-duration: $a_trans;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        background: $button_hover_red;
+        box-shadow: 0 0 2px $button_hover_red;
+        color: white;
+        text-shadow: 0 0 2px white;
+      }
+    }
+
+
+  }
+
+  .changeForm {
+    margin: 20px auto;
+    text-align: center;
+
+    a {
+      color: $t_blue;
+      transition-duration: $a_trans;
+
+      &:hover {
+        text-shadow: 0 0 2px $t_blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 40px auto;
+  max-width: 400px;
+  padding: 0 10px;
+
+  .footer_icon {
+    padding: 0 0;
+    //stroke: $t_blue;
+    fill: $t_blue;
+  }
+
+  .link {
+    display: inline-block;
+
+    &:last-child {
+      float: right;
+    }
+
+    a {
+      color: $t_blue;
+      transition-duration: $a_trans;
+      position: relative;
+      bottom: 10px;
+
+      &:hover {
+        text-shadow: 0 0 2px $t_blue;
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+
+
+
+

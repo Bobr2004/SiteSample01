@@ -1,0 +1,127 @@
+@import "BaseStyleRemover.css";
+a:active, a:hover, a:visited,
+a {
+  text-decoration: none;
+  color: #c8d1d9;
+}
+
+body {
+  background: #0d1118;
+  color: #c8d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 18px;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 32px;
+  text-shadow: 0 0 1px #c8d1d9;
+}
+h1 a {
+  transition-duration: 0.7s;
+  font-size: 1.5em;
+}
+h1 a:hover {
+  text-shadow: 0 0 15px #c8d1d9;
+}
+
+.formTitle {
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.reg_log {
+  display: block;
+}
+.reg_log .reg, .reg_log .log, .reg_log .changeForm, .reg_log .forgot {
+  max-width: 550px;
+  background: #161b22;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #21262d;
+  box-shadow: 0 0 5px black;
+}
+.reg_log .reg form div, .reg_log .log form div, .reg_log .changeForm form div, .reg_log .forgot form div {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+.reg_log .reg form .forgot_pass, .reg_log .log form .forgot_pass, .reg_log .changeForm form .forgot_pass, .reg_log .forgot form .forgot_pass {
+  color: #57a3fc;
+  float: right;
+  transition-duration: 0.7s;
+}
+.reg_log .reg form .forgot_pass:hover, .reg_log .log form .forgot_pass:hover, .reg_log .changeForm form .forgot_pass:hover, .reg_log .forgot form .forgot_pass:hover {
+  text-shadow: 0 0 2px #57a3fc;
+  text-decoration: underline;
+}
+.reg_log .reg input, .reg_log .log input, .reg_log .changeForm input, .reg_log .forgot input {
+  background: #0d1118;
+  border: 1px solid #30363e;
+  padding: 8px 12px;
+  color: #c8d1d9;
+  display: block;
+  width: 100%;
+  margin: 10px 0 0;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.reg_log .reg input::after, .reg_log .log input::after, .reg_log .changeForm input::after, .reg_log .forgot input::after {
+  content: none;
+}
+.reg_log .reg .FormButton, .reg_log .log .FormButton, .reg_log .changeForm .FormButton, .reg_log .forgot .FormButton {
+  background: #d55b5a;
+  transition-duration: 0.7s;
+  font-weight: 700;
+  cursor: pointer;
+}
+.reg_log .reg .FormButton:hover, .reg_log .log .FormButton:hover, .reg_log .changeForm .FormButton:hover, .reg_log .forgot .FormButton:hover {
+  background: #d36261;
+  box-shadow: 0 0 2px #d36261;
+  color: white;
+  text-shadow: 0 0 2px white;
+}
+.reg_log .changeForm {
+  margin: 20px auto;
+  text-align: center;
+}
+.reg_log .changeForm a {
+  color: #57a3fc;
+  transition-duration: 0.7s;
+}
+.reg_log .changeForm a:hover {
+  text-shadow: 0 0 2px #57a3fc;
+  text-decoration: underline;
+}
+
+footer {
+  margin: 40px auto;
+  max-width: 400px;
+  padding: 0 10px;
+}
+footer .footer_icon {
+  padding: 0 0;
+  fill: #57a3fc;
+}
+footer .link {
+  display: inline-block;
+}
+footer .link:last-child {
+  float: right;
+}
+footer .link a {
+  color: #57a3fc;
+  transition-duration: 0.7s;
+  position: relative;
+  bottom: 10px;
+}
+footer .link a:hover {
+  text-shadow: 0 0 2px #57a3fc;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=logstyle.css.map */
